@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Register - Kristian Tours</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .auth-page {
+            min-height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                        url('https://images.unsplash.com/photo-1505228395891-9a51e7e86bf6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3433&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .auth-container {
+            width: 100%;
+            max-width: 900px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            display: flex;
+            gap: 40px;
+        }
+
+        .form-section {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .divider {
+            width: 1px;
+            background: linear-gradient(to bottom, transparent, #0066cc, transparent);
+            margin: 20px 0;
+        }
+
+        .auth-title {
+            color: #003366;
+            margin-bottom: 30px;
+            font-size: 28px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .auth-title i {
+            margin-right: 10px;
+            color: #0066cc;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #003366;
+            font-weight: 500;
+        }
+
+        .form-group label i {
+            margin-right: 8px;
+            color: #0066cc;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e1e1e1;
+            border-radius: 10px;
+            font-size: 15px;
+            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        .form-group input:focus {
+            border-color: #0066cc;
+            box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
+            outline: none;
+        }
+
+        .submit-button {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(135deg, #0066cc, #003366);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .submit-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 102, 204, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .auth-container {
+                flex-direction: column;
+                padding: 30px;
+                gap: 30px;
+            }
+
+            .divider {
+                width: 100%;
+                height: 1px;
+                margin: 0;
+            }
+
+            .auth-title {
+                font-size: 24px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .auth-container {
+                padding: 20px;
+            }
+
+            .form-group input {
+                padding: 10px;
+            }
+
+            .submit-button {
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Kristian Tours</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html" class="active">Login/Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="auth-page">
+        <div class="auth-container">
+            <!-- Login Section -->
+            <div class="form-section">
+                <h2 class="auth-title"><i class="fas fa-sign-in-alt"></i>Login</h2>
+                
+                <form action="login_process.php" method="POST">
+                    <div class="form-group">
+                        <label for="login-email"><i class="fas fa-envelope"></i>Email Address</label>
+                        <input type="email" id="login-email" name="email" required placeholder="Enter your email">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="login-password"><i class="fas fa-lock"></i>Password</label>
+                        <input type="password" id="login-password" name="password" required placeholder="Enter your password">
+                    </div>
+                    
+                    <button type="submit" class="submit-button">
+                        <i class="fas fa-sign-in-alt"></i>Login
+                    </button>
+                </form>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- Register Section -->
+            <div class="form-section">
+                <h2 class="auth-title"><i class="fas fa-user-plus"></i>Register</h2>
+                
+                <form action="register_process.php" method="POST">
+                    <div class="form-group">
+                        <label for="register-name"><i class="fas fa-user"></i>Full Name</label>
+                        <input type="text" id="register-name" name="name" required placeholder="Enter your full name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="register-email"><i class="fas fa-envelope"></i>Email Address</label>
+                        <input type="email" id="register-email" name="email" required placeholder="Enter your email">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="register-password"><i class="fas fa-lock"></i>Password</label>
+                        <input type="password" id="register-password" name="password" required placeholder="Create a password">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="register-confirm-password"><i class="fas fa-lock"></i>Confirm Password</label>
+                        <input type="password" id="register-confirm-password" name="confirm_password" required placeholder="Confirm your password">
+                    </div>
+                    
+                    <button type="submit" class="submit-button">
+                        <i class="fas fa-user-plus"></i>Create Account
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Kristian Ralev Travel</h4>
+                <p>Your trusted partner in creating unforgettable travel experiences.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Kristian Ralev Travel. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html> 

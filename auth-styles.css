@@ -1,0 +1,81 @@
+/* Auth Pages Common Styles */
+.auth-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0066cc, #003366);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.auth-container {
+    width: 100%;
+    max-width: 400px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.auth-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.auth-container h2 i {
+    margin-right: 10px;
+    color: #0066cc;
+}
+
+/* Error and Success Messages */
+.error-message {
+    background: #fff2f2;
+    color: #dc3545;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.error-message i {
+    color: #dc3545;
+}
+
+.success-message {
+    background: #f0fff4;
+    color: #28a745;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.success-message i {
+    color: #28a745;
+}
+
+/* Fix header active state */
+.nav-links li a.active {
+    color: #0066cc;
+    font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .auth-container {
+        padding: 20px;
+    }
+
+    .auth-container h2 {
+        font-size: 20px;
+    }
+} 

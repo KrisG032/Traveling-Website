@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Destinations - Kristian Ralev Travel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Kristian Tours</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login/Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="destinations-hero">
+        <div class="hero-content">
+            <h1>Explore Our Destinations</h1>
+            <p>Discover the world's most beautiful coastal destinations</p>
+        </div>
+    </section>
+
+    <section class="all-destinations">
+        <div class="destinations-grid">
+            <!-- Greece Destination -->
+            <div class="destination-card">
+                <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Greece">
+                <div class="destination-info">
+                    <h3>Greek Islands</h3>
+                    <p>Experience the magic of ancient ruins and crystal-clear waters</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Santorini Sunset Cruise</li>
+                        <li><i class="fas fa-check"></i> Mykonos Beach Experience</li>
+                        <li><i class="fas fa-check"></i> Crete Cultural Tour</li>
+                    </ul>
+                    <button onclick="openModal('greece-modal')" class="book-button">View Details</button>
+                </div>
+            </div>
+
+            <!-- Croatia Destination -->
+            <div class="destination-card">
+                <img src="https://images.unsplash.com/photo-1596097155664-4f5c49ba1b69?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Croatia">
+                <div class="destination-info">
+                    <h3>Croatian Coast</h3>
+                    <p>Discover the gems of the Adriatic Sea</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Dubrovnik City Walls</li>
+                        <li><i class="fas fa-check"></i> Split Island Hopping</li>
+                        <li><i class="fas fa-check"></i> Hvar Lavender Fields</li>
+                    </ul>
+                    <button onclick="openModal('croatia-modal')" class="book-button">View Details</button>
+                </div>
+            </div>
+
+            <!-- Maldives Destination -->
+            <div class="destination-card">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Maldives">
+                <div class="destination-info">
+                    <h3>Maldives</h3>
+                    <p>Paradise on Earth with overwater villas</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Overwater Villa Experience</li>
+                        <li><i class="fas fa-check"></i> Coral Reef Diving</li>
+                        <li><i class="fas fa-check"></i> Sunset Cruises</li>
+                    </ul>
+                    <button onclick="openModal('maldives-modal')" class="book-button">View Details</button>
+                </div>
+            </div>
+
+            <!-- Amalfi Coast Destination -->
+            <div class="destination-card">
+                <img src="https://images.unsplash.com/photo-1533104816931-20fa691ff6ca?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Amalfi Coast">
+                <div class="destination-info">
+                    <h3>Amalfi Coast</h3>
+                    <p>Experience the charm of the Italian coastline</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Positano Beaches</li>
+                        <li><i class="fas fa-check"></i> Capri Island Tour</li>
+                        <li><i class="fas fa-check"></i> Wine Tasting Experience</li>
+                    </ul>
+                    <button onclick="openModal('amalfi-modal')" class="book-button">View Details</button>
+                </div>
+            </div>
+
+            <!-- Japan Destination -->
+            <div class="destination-card">
+                <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Japan">
+                <div class="destination-info">
+                    <h3>Japan</h3>
+                    <p>Discover the perfect blend of ancient traditions and modern innovation in the Land of the Rising Sun.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Tokyo City Tour</li>
+                        <li><i class="fas fa-check"></i> Mount Fuji Experience</li>
+                        <li><i class="fas fa-check"></i> Kyoto Temple Tour</li>
+                    </ul>
+                    <button onclick="openModal('japan-modal')" class="book-button">View Details</button>
+                </div>
+            </div>
+
+            <!-- France Destination -->
+            <div class="destination-card">
+                <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="France">
+                <div class="destination-info">
+                    <h3>France</h3>
+                    <p>Experience the romance, culture, and culinary delights of the world's most visited country.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Paris City Tour</li>
+                        <li><i class="fas fa-check"></i> Loire Valley Castles</li>
+                        <li><i class="fas fa-check"></i> French Riviera Experience</li>
+                    </ul>
+                    <button onclick="openModal('france-modal')" class="book-button">View Details</button>
+                </div>
+            </div>
+
+            <!-- Spain Destination -->
+            <div class="destination-card">
+                <img src="https://images.unsplash.com/photo-1543783207-ec64e4d95325?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Spain">
+                <div class="destination-info">
+                    <h3>Spain</h3>
+                    <p>Discover the passion of flamenco, historic architecture, and Mediterranean charm.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Barcelona Highlights</li>
+                        <li><i class="fas fa-check"></i> Madrid Royal Palace</li>
+                        <li><i class="fas fa-check"></i> Andalusian Adventure</li>
+                    </ul>
+                    <button onclick="openModal('spain-modal')" class="book-button">View Details</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="destination-features">
+        <h2>Why Choose Our Destinations</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-hotel"></i>
+                <h3>Luxury Accommodations</h3>
+                <p>Hand-picked premium hotels and resorts</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-user-tie"></i>
+                <h3>Expert Guides</h3>
+                <p>Professional local guides for authentic experiences</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-utensils"></i>
+                <h3>Fine Dining</h3>
+                <p>Curated culinary experiences</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Safe Travel</h3>
+                <p>24/7 support and travel assistance</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destination Modals -->
+    <!-- Greece Modal -->
+    <div id="greece-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('greece-modal')">&times;</span>
+            <div class="modal-header">
+                <h2>Greek Islands Experience</h2>
+                <p class="modal-subtitle">10 Days of Mediterranean Paradise</p>
+            </div>
+            <div class="modal-body">
+                <div class="destination-description">
+                    <h3>Destination Overview</h3>
+                    <p>Embark on a journey through the stunning Greek Islands, where ancient history meets pristine beaches and vibrant culture. Experience the world-famous sunsets of Santorini, the crystal-clear waters of Mykonos, and the rich heritage of Crete.</p>
+                    
+                    <h3>Daily Itinerary</h3>
+                    <div class="itinerary-day">
+                        <h4>Days 1-3: Santorini</h4>
+                        <ul>
+                            <li><i class="fas fa-sun"></i> Arrival and luxury hotel check-in</li>
+                            <li><i class="fas fa-camera"></i> Oia sunset photography tour</li>
+                            <li><i class="fas fa-ship"></i> Caldera catamaran cruise</li>
+                            <li><i class="fas fa-wine-glass"></i> Wine tasting at local vineyards</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="itinerary-day">
+                        <h4>Days 4-6: Mykonos</h4>
+                        <ul>
+                            <li><i class="fas fa-umbrella-beach"></i> Paradise and Super Paradise beaches</li>
+                            <li><i class="fas fa-walking"></i> Little Venice walking tour</li>
+                            <li><i class="fas fa-water"></i> Water sports activities</li>
+                            <li><i class="fas fa-cocktail"></i> Sunset cocktail experience</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="itinerary-day">
+                        <h4>Days 7-10: Crete</h4>
+                        <ul>
+                            <li><i class="fas fa-landmark"></i> Knossos Palace guided tour</li>
+                            <li><i class="fas fa-utensils"></i> Traditional cooking class</li>
+                            <li><i class="fas fa-hiking"></i> Samaria Gorge hike</li>
+                            <li><i class="fas fa-plane-departure"></i> Departure day</li>
+                        </ul>
+                    </div>
+
+                    <h3>What's Included</h3>
+                    <ul class="includes-list">
+                        <li><i class="fas fa-hotel"></i> Luxury accommodation</li>
+                        <li><i class="fas fa-plane"></i> Inter-island transfers</li>
+                        <li><i class="fas fa-utensils"></i> Daily breakfast</li>
+                        <li><i class="fas fa-user-tie"></i> Professional guides</li>
+                        <li><i class="fas fa-ticket-alt"></i> All entrance fees</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button onclick="showBookingForm('greece-booking-form')" class="book-button">Book This Trip</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Croatia Modal -->
+    <div id="croatia-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('croatia-modal')">&times;</span>
+            <div class="modal-header">
+                <h2>Croatian Coastal Adventure</h2>
+                <p class="modal-subtitle">8 Days Along the Adriatic</p>
+            </div>
+            <div class="modal-body">
+                <div class="destination-description">
+                    <h3>Destination Overview</h3>
+                    <p>Discover the pearl of the Adriatic with our comprehensive Croatian coast tour. From the historic walls of Dubrovnik to the stunning islands of Dalmatia, experience Croatia's rich history, crystal-clear waters, and magnificent landscapes.</p>
+                    
+                    <h3>Daily Itinerary</h3>
+                    <div class="itinerary-day">
+                        <h4>Days 1-3: Dubrovnik</h4>
+                        <ul>
+                            <li><i class="fas fa-fort-awesome"></i> City walls walking tour</li>
+                            <li><i class="fas fa-dragon"></i> Game of Thrones locations tour</li>
+                            <li><i class="fas fa-ferry"></i> Lokrum Island excursion</li>
+                            <li><i class="fas fa-cable-car"></i> Mount Srđ sunset experience</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="itinerary-day">
+                        <h4>Days 4-6: Split & Islands</h4>
+                        <ul>
+                            <li><i class="fas fa-palace"></i> Diocletian's Palace tour</li>
+                            <li><i class="fas fa-ship"></i> Blue Cave and Hvar island hopping</li>
+                            <li><i class="fas fa-fish"></i> Traditional Dalmatian dinner</li>
+                            <li><i class="fas fa-swimmer"></i> Beach time at Zlatni Rat</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="itinerary-day">
+                        <h4>Days 7-8: Hvar</h4>
+                        <ul>
+                            <li><i class="fas fa-flower"></i> Lavender fields tour</li>
+                            <li><i class="fas fa-wine-bottle"></i> Wine tasting experience</li>
+                            <li><i class="fas fa-bicycle"></i> Island cycling tour</li>
+                            <li><i class="fas fa-plane-departure"></i> Departure day</li>
+                        </ul>
+                    </div>
+
+                    <h3>What's Included</h3>
+                    <ul class="includes-list">
+                        <li><i class="fas fa-hotel"></i> 4-star accommodations</li>
+                        <li><i class="fas fa-ferry"></i> All ferry transfers</li>
+                        <li><i class="fas fa-utensils"></i> Daily breakfast and select dinners</li>
+                        <li><i class="fas fa-user-tie"></i> Expert local guides</li>
+                        <li><i class="fas fa-ticket-alt"></i> All entrance fees</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button onclick="showBookingForm('croatia-booking-form')" class="book-button">Book This Trip</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Maldives Modal -->
+    <div id="maldives-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('maldives-modal')">&times;</span>
+            <div class="modal-header">
+                <h2>Maldives Paradise</h2>
+                <p class="modal-subtitle">7 Days of Tropical Bliss</p>
+            </div>
+            <div class="modal-body">
+                <div class="destination-description">
+                    <h3>Destination Overview</h3>
+                    <p>Experience the ultimate luxury in the Maldives, where crystal-clear waters meet pristine white beaches. Stay in overwater villas, explore vibrant coral reefs, and indulge in world-class spa treatments.</p>
+                    
+                    <h3>Daily Itinerary</h3>
+                    <div class="itinerary-day">
+                        <h4>Days 1-2: Arrival & Resort Experience</h4>
+                        <ul>
+                            <li><i class="fas fa-plane-arrival"></i> Airport transfer by seaplane</li>
+                            <li><i class="fas fa-hotel"></i> Overwater villa check-in</li>
+                            <li><i class="fas fa-umbrella-beach"></i> Private beach experience</li>
+                            <li><i class="fas fa-spa"></i> Luxury spa treatment</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="itinerary-day">
+                        <h4>Days 3-4: Water Activities</h4>
+                        <ul>
+                            <li><i class="fas fa-fish"></i> Snorkeling in coral reefs</li>
+                            <li><i class="fas fa-water"></i> Scuba diving experience</li>
+                            <li><i class="fas fa-ship"></i> Sunset dolphin cruise</li>
+                            <li><i class="fas fa-swimmer"></i> Water sports activities</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="itinerary-day">
+                        <h4>Days 5-7: Island Exploration</h4>
+                        <ul>
+                            <li><i class="fas fa-island-tropical"></i> Island hopping tour</li>
+                            <li><i class="fas fa-utensils"></i> Underwater dining experience</li>
+                            <li><i class="fas fa-camera"></i> Photography tour</li>
+                            <li><i class="fas fa-plane-departure"></i> Departure day</li>
+                        </ul>
+                    </div>
+
+                    <h3>What's Included</h3>
+                    <ul class="includes-list">
+                        <li><i class="fas fa-hotel"></i> Luxury overwater villa</li>
+                        <li><i class="fas fa-plane"></i> Seaplane transfers</li>
+                        <li><i class="fas fa-utensils"></i> All meals and drinks</li>
+                        <li><i class="fas fa-user-tie"></i> Personal butler service</li>
+                        <li><i class="fas fa-ticket-alt"></i> All activities and excursions</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button onclick="showBookingForm('maldives-booking-form')" class="book-button">Book This Trip</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Amalfi Coast Modal -->
+    <div id="amalfi-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('amalfi-modal')">&times;</span>
+            <div class="modal-header">
+                <h2>Amalfi Coast Experience</h2>
+                <p class="modal-subtitle">8 Days of Italian Paradise</p>
+            </div>
+            <div class="modal-body">
+                <div class="destination-description">
+                    <h3>Destination Overview</h3>
+                    <p>Discover the stunning Amalfi Coast, where dramatic cliffs meet crystal-clear waters. Experience the charm of colorful villages, world-class cuisine, and rich cultural heritage.</p>
+                    
+                    <h3>Daily Itinerary</h3>
+                    <div class="itinerary-day">
+                        <h4>Days 1-3: Positano</h4>
+                        <ul>
+                            <li><i class="fas fa-plane-arrival"></i> Arrival in Naples</li>
+                            <li><i class="fas fa-umbrella-beach"></i> Beach day at Spiaggia Grande</li>
+                            <li><i class="fas fa-utensils"></i> Cooking class experience</li>
+                            <li><i class="fas fa-wine-glass"></i> Wine tasting tour</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="itinerary-day">
+                        <h4>Days 4-5: Capri Island</h4>
+                        <ul>
+                            <li><i class="fas fa-ship"></i> Ferry to Capri</li>
+                            <li><i class="fas fa-cave"></i> Blue Grotto visit</li>
+                            <li><i class="fas fa-hiking"></i> Monte Solaro hike</li>
+                            <li><i class="fas fa-shopping-bag"></i> Shopping in Capri town</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="itinerary-day">
+                        <h4>Days 6-8: Amalfi & Ravello</h4>
+                        <ul>
+                            <li><i class="fas fa-church"></i> Amalfi Cathedral tour</li>
+                            <li><i class="fas fa-garden"></i> Villa Rufolo gardens</li>
+                            <li><i class="fas fa-swimmer"></i> Beach time in Amalfi</li>
+                            <li><i class="fas fa-plane-departure"></i> Departure day</li>
+                        </ul>
+                    </div>
+
+                    <h3>What's Included</h3>
+                    <ul class="includes-list">
+                        <li><i class="fas fa-hotel"></i> Luxury accommodation</li>
+                        <li><i class="fas fa-car"></i> Private transfers</li>
+                        <li><i class="fas fa-utensils"></i> Daily breakfast</li>
+                        <li><i class="fas fa-user-tie"></i> Professional guides</li>
+                        <li><i class="fas fa-ticket-alt"></i> All entrance fees</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button onclick="showBookingForm('amalfi-booking-form')" class="book-button">Book This Trip</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Booking Form Modals -->
+    <!-- Greece Booking Form -->
+    <div id="greece-booking-form" class="modal booking-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('greece-booking-form')">&times;</span>
+            <div class="modal-header booking-header">
+                <h2>Book Greek Islands Experience</h2>
+                <p class="modal-subtitle">Complete Your Booking</p>
+            </div>
+            <div class="modal-body">
+                <form class="booking-form">
+                    <div class="form-group">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" name="fullname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="birthday">Date of Birth</label>
+                        <input type="date" id="birthday" name="birthday" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="trip-date">Select Trip Date</label>
+                        <select id="trip-date" name="trip-date" required>
+                            <option value="">Choose a date</option>
+                            <option value="2024-06-15">June 15-25, 2024</option>
+                            <option value="2024-07-10">July 10-20, 2024</option>
+                            <option value="2024-08-05">August 5-15, 2024</option>
+                            <option value="2024-09-01">September 1-11, 2024</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Number of Guests</label>
+                        <select id="guests" name="guests" required>
+                            <option value="">Select number of guests</option>
+                            <option value="1">1 Guest</option>
+                            <option value="2">2 Guests</option>
+                            <option value="3">3 Guests</option>
+                            <option value="4">4 Guests</option>
+                            <option value="5">5 Guests</option>
+                            <option value="6">6 Guests</option>
+                        </select>
+                    </div>
+                    <div class="payment-options">
+                        <h3>Select Payment Method</h3>
+                        <div class="payment-buttons">
+                            <button type="button" class="payment-button card-payment" id="paypal-button-greece">
+                                <i class="fab fa-paypal"></i>
+                                Pay with PayPal
+                            </button>
+                            <button type="button" class="payment-button cash-payment">
+                                <i class="fas fa-money-bill-wave"></i>
+                                Pay in Office
+                            </button>
+                        </div>
+                        <div id="paypal-button-container-greece" class="paypal-button-container" style="display: none; margin-top: 20px;"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Croatia Booking Form -->
+    <div id="croatia-booking-form" class="modal booking-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('croatia-booking-form')">&times;</span>
+            <div class="modal-header booking-header">
+                <h2>Book Croatian Coastal Adventure</h2>
+                <p class="modal-subtitle">Complete Your Booking</p>
+            </div>
+            <div class="modal-body">
+                <form class="booking-form">
+                    <div class="form-group">
+                        <label for="fullname-croatia">Full Name</label>
+                        <input type="text" id="fullname-croatia" name="fullname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="birthday-croatia">Date of Birth</label>
+                        <input type="date" id="birthday-croatia" name="birthday" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email-croatia">Email Address</label>
+                        <input type="email" id="email-croatia" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone-croatia">Phone Number</label>
+                        <input type="tel" id="phone-croatia" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="trip-date">Select Trip Date</label>
+                        <select id="trip-date" name="trip-date" required>
+                            <option value="">Choose a date</option>
+                            <option value="2024-06-15">June 15-25, 2024</option>
+                            <option value="2024-07-10">July 10-20, 2024</option>
+                            <option value="2024-08-05">August 5-15, 2024</option>
+                            <option value="2024-09-01">September 1-11, 2024</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Number of Guests</label>
+                        <select id="guests" name="guests" required>
+                            <option value="">Select number of guests</option>
+                            <option value="1">1 Guest</option>
+                            <option value="2">2 Guests</option>
+                            <option value="3">3 Guests</option>
+                            <option value="4">4 Guests</option>
+                            <option value="5">5 Guests</option>
+                            <option value="6">6 Guests</option>
+                        </select>
+                    </div>
+                    <div class="payment-options">
+                        <h3>Select Payment Method</h3>
+                        <div class="payment-buttons">
+                            <button type="button" class="payment-button card-payment" id="paypal-button-croatia">
+                                <i class="fab fa-paypal"></i>
+                                Pay with PayPal
+                            </button>
+                            <button type="button" class="payment-button cash-payment">
+                                <i class="fas fa-money-bill-wave"></i>
+                                Pay in Office
+                            </button>
+                        </div>
+                        <div id="paypal-button-container-croatia" class="paypal-button-container" style="display: none; margin-top: 20px;"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Maldives Booking Form -->
+    <div id="maldives-booking-form" class="modal booking-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('maldives-booking-form')">&times;</span>
+            <div class="modal-header booking-header">
+                <h2>Book Maldives Paradise</h2>
+                <p class="modal-subtitle">Complete Your Booking</p>
+            </div>
+            <div class="modal-body">
+                <form class="booking-form">
+                    <div class="form-group">
+                        <label for="fullname-maldives">Full Name</label>
+                        <input type="text" id="fullname-maldives" name="fullname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="birthday-maldives">Date of Birth</label>
+                        <input type="date" id="birthday-maldives" name="birthday" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email-maldives">Email Address</label>
+                        <input type="email" id="email-maldives" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone-maldives">Phone Number</label>
+                        <input type="tel" id="phone-maldives" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="trip-date">Select Trip Date</label>
+                        <select id="trip-date" name="trip-date" required>
+                            <option value="">Choose a date</option>
+                            <option value="2024-06-15">June 15-22, 2024</option>
+                            <option value="2024-07-10">July 10-17, 2024</option>
+                            <option value="2024-08-05">August 5-12, 2024</option>
+                            <option value="2024-09-01">September 1-8, 2024</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Number of Guests</label>
+                        <select id="guests" name="guests" required>
+                            <option value="">Select number of guests</option>
+                            <option value="1">1 Guest</option>
+                            <option value="2">2 Guests</option>
+                            <option value="3">3 Guests</option>
+                            <option value="4">4 Guests</option>
+                            <option value="5">5 Guests</option>
+                            <option value="6">6 Guests</option>
+                        </select>
+                    </div>
+                    <div class="payment-options">
+                        <h3>Select Payment Method</h3>
+                        <div class="payment-buttons">
+                            <button type="button" class="payment-button card-payment" id="paypal-button-maldives">
+                                <i class="fab fa-paypal"></i>
+                                Pay with PayPal
+                            </button>
+                            <button type="button" class="payment-button cash-payment">
+                                <i class="fas fa-money-bill-wave"></i>
+                                Pay in Office
+                            </button>
+                        </div>
+                        <div id="paypal-button-container-maldives" class="paypal-button-container" style="display: none; margin-top: 20px;"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Amalfi Coast Booking Form -->
+    <div id="amalfi-booking-form" class="modal booking-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('amalfi-booking-form')">&times;</span>
+            <div class="modal-header booking-header">
+                <h2>Book Amalfi Coast Experience</h2>
+                <p class="modal-subtitle">Complete Your Booking</p>
+            </div>
+            <div class="modal-body">
+                <form class="booking-form">
+                    <div class="form-group">
+                        <label for="fullname-amalfi">Full Name</label>
+                        <input type="text" id="fullname-amalfi" name="fullname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="birthday-amalfi">Date of Birth</label>
+                        <input type="date" id="birthday-amalfi" name="birthday" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email-amalfi">Email Address</label>
+                        <input type="email" id="email-amalfi" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone-amalfi">Phone Number</label>
+                        <input type="tel" id="phone-amalfi" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="trip-date">Select Trip Date</label>
+                        <select id="trip-date" name="trip-date" required>
+                            <option value="">Choose a date</option>
+                            <option value="2024-06-15">June 15-22, 2024</option>
+                            <option value="2024-07-10">July 10-17, 2024</option>
+                            <option value="2024-08-05">August 5-12, 2024</option>
+                            <option value="2024-09-01">September 1-8, 2024</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Number of Guests</label>
+                        <select id="guests" name="guests" required>
+                            <option value="">Select number of guests</option>
+                            <option value="1">1 Guest</option>
+                            <option value="2">2 Guests</option>
+                            <option value="3">3 Guests</option>
+                            <option value="4">4 Guests</option>
+                            <option value="5">5 Guests</option>
+                            <option value="6">6 Guests</option>
+                        </select>
+                    </div>
+                    <div class="payment-options">
+                        <h3>Select Payment Method</h3>
+                        <div class="payment-buttons">
+                            <button type="button" class="payment-button card-payment" id="paypal-button-amalfi">
+                                <i class="fab fa-paypal"></i>
+                                Pay with PayPal
+                            </button>
+                            <button type="button" class="payment-button cash-payment">
+                                <i class="fas fa-money-bill-wave"></i>
+                                Pay in Office
+                            </button>
+                        </div>
+                        <div id="paypal-button-container-amalfi" class="paypal-button-container" style="display: none; margin-top: 20px;"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- France Modal -->
+    <div id="france-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('france-modal')">&times;</span>
+            <div class="modal-header">
+                <h2>French Experience</h2>
+                <p class="modal-subtitle">9 Days of Culture and Romance</p>
+            </div>
+            <div class="modal-body">
+                <div class="destination-description">
+                    <h3>Destination Overview</h3>
+                    <p>Immerse yourself in the beauty and culture of France, from the iconic landmarks of Paris to the stunning châteaux of the Loire Valley and the glamorous French Riviera.</p>
+                    
+                    <h3>Daily Itinerary</h3>
+                    <div class="itinerary-day">
+                        <h4>Days 1-3: Paris</h4>
+                        <ul>
+                            <li><i class="fas fa-monument"></i> Eiffel Tower visit</li>
+                            <li><i class="fas fa-palette"></i> Louvre Museum tour</li>
+                            <li><i class="fas fa-church"></i> Notre-Dame Cathedral</li>
+                            <li><i class="fas fa-walking"></i> Montmartre walking tour</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="itinerary-day">
+                        <h4>Days 4-6: Loire Valley</h4>
+                        <ul>
+                            <li><i class="fas fa-castle"></i> Chambord Castle visit</li>
+                            <li><i class="fas fa-wine-glass"></i> Wine tasting experience</li>
+                            <li><i class="fas fa-bicycle"></i> Loire Valley cycling tour</li>
+                            <li><i class="fas fa-utensils"></i> French cuisine workshop</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="itinerary-day">
+                        <h4>Days 7-9: French Riviera</h4>
+                        <ul>
+                            <li><i class="fas fa-umbrella-beach"></i> Nice beach day</li>
+                            <li><i class="fas fa-film"></i> Cannes Film Festival walk</li>
+                            <li><i class="fas fa-car"></i> Monaco day trip</li>
+                            <li><i class="fas fa-plane-departure"></i> Departure day</li>
+                        </ul>
+                    </div>
+
+                    <h3>What's Included</h3>
+                    <ul class="includes-list">
+                        <li><i class="fas fa-hotel"></i> Luxury accommodations</li>
+                        <li><i class="fas fa-train"></i> High-speed train transfers</li>
+                        <li><i class="fas fa-utensils"></i> Daily breakfast and select dinners</li>
+                        <li><i class="fas fa-user-tie"></i> Expert local guides</li>
+                        <li><i class="fas fa-ticket-alt"></i> All entrance fees</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button onclick="showBookingForm('france-booking-form')" class="book-button">Book This Trip</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Spain Modal -->
+    <div id="spain-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('spain-modal')">&times;</span>
+            <div class="modal-header">
+                <h2>Spanish Adventure</h2>
+                <p class="modal-subtitle">10 Days of Passion and Culture</p>
+            </div>
+            <div class="modal-body">
+                <div class="destination-description">
+                    <h3>Destination Overview</h3>
+                    <p>Experience the vibrant culture of Spain, from the architectural wonders of Barcelona to the royal heritage of Madrid and the flamenco rhythms of Andalusia.</p>
+                    
+                    <h3>Daily Itinerary</h3>
+                    <div class="itinerary-day">
+                        <h4>Days 1-3: Barcelona</h4>
+                        <ul>
+                            <li><i class="fas fa-church"></i> Sagrada Familia tour</li>
+                            <li><i class="fas fa-palette"></i> Park Güell visit</li>
+                            <li><i class="fas fa-utensils"></i> Tapas cooking class</li>
+                            <li><i class="fas fa-walking"></i> Gothic Quarter walk</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="itinerary-day">
+                        <h4>Days 4-6: Madrid</h4>
+                        <ul>
+                            <li><i class="fas fa-crown"></i> Royal Palace tour</li>
+                            <li><i class="fas fa-palette"></i> Prado Museum visit</li>
+                            <li><i class="fas fa-tree"></i> Retiro Park experience</li>
+                            <li><i class="fas fa-glass-cheers"></i> Wine tasting</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="itinerary-day">
+                        <h4>Days 7-10: Andalusia</h4>
+                        <ul>
+                            <li><i class="fas fa-monument"></i> Alhambra Palace visit</li>
+                            <li><i class="fas fa-music"></i> Flamenco show</li>
+                            <li><i class="fas fa-mosque"></i> Córdoba Mosque tour</li>
+                            <li><i class="fas fa-plane-departure"></i> Departure day</li>
+                        </ul>
+                    </div>
+
+                    <h3>What's Included</h3>
+                    <ul class="includes-list">
+                        <li><i class="fas fa-hotel"></i> 4-star accommodations</li>
+                        <li><i class="fas fa-train"></i> High-speed train transfers</li>
+                        <li><i class="fas fa-utensils"></i> Daily breakfast and tapas tours</li>
+                        <li><i class="fas fa-user-tie"></i> Expert local guides</li>
+                        <li><i class="fas fa-ticket-alt"></i> All entrance fees</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button onclick="showBookingForm('spain-booking-form')" class="book-button">Book This Trip</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- France Booking Form -->
+    <div id="france-booking-form" class="modal booking-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('france-booking-form')">&times;</span>
+            <div class="modal-header booking-header">
+                <h2>Book French Experience</h2>
+                <p class="modal-subtitle">Complete Your Booking</p>
+            </div>
+            <div class="modal-body">
+                <form class="booking-form">
+                    <div class="form-group">
+                        <label for="fullname-france">Full Name</label>
+                        <input type="text" id="fullname-france" name="fullname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="birthday-france">Date of Birth</label>
+                        <input type="date" id="birthday-france" name="birthday" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email-france">Email Address</label>
+                        <input type="email" id="email-france" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone-france">Phone Number</label>
+                        <input type="tel" id="phone-france" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="trip-date">Select Trip Date</label>
+                        <select id="trip-date" name="trip-date" required>
+                            <option value="">Choose a date</option>
+                            <option value="2024-06-15">June 15-23, 2024</option>
+                            <option value="2024-07-10">July 10-18, 2024</option>
+                            <option value="2024-08-05">August 5-13, 2024</option>
+                            <option value="2024-09-01">September 1-9, 2024</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Number of Guests</label>
+                        <select id="guests" name="guests" required>
+                            <option value="">Select number of guests</option>
+                            <option value="1">1 Guest</option>
+                            <option value="2">2 Guests</option>
+                            <option value="3">3 Guests</option>
+                            <option value="4">4 Guests</option>
+                            <option value="5">5 Guests</option>
+                            <option value="6">6 Guests</option>
+                        </select>
+                    </div>
+                    <div class="payment-options">
+                        <h3>Select Payment Method</h3>
+                        <div class="payment-buttons">
+                            <button type="button" class="payment-button card-payment" id="paypal-button-france">
+                                <i class="fab fa-paypal"></i>
+                                Pay with PayPal
+                            </button>
+                            <button type="button" class="payment-button cash-payment">
+                                <i class="fas fa-money-bill-wave"></i>
+                                Pay in Office
+                            </button>
+                        </div>
+                        <div id="paypal-button-container-france" class="paypal-button-container" style="display: none; margin-top: 20px;"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Spain Booking Form -->
+    <div id="spain-booking-form" class="modal booking-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('spain-booking-form')">&times;</span>
+            <div class="modal-header booking-header">
+                <h2>Book Spanish Adventure</h2>
+                <p class="modal-subtitle">Complete Your Booking</p>
+            </div>
+            <div class="modal-body">
+                <form class="booking-form">
+                    <div class="form-group">
+                        <label for="fullname-spain">Full Name</label>
+                        <input type="text" id="fullname-spain" name="fullname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="birthday-spain">Date of Birth</label>
+                        <input type="date" id="birthday-spain" name="birthday" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email-spain">Email Address</label>
+                        <input type="email" id="email-spain" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone-spain">Phone Number</label>
+                        <input type="tel" id="phone-spain" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="trip-date">Select Trip Date</label>
+                        <select id="trip-date" name="trip-date" required>
+                            <option value="">Choose a date</option>
+                            <option value="2024-06-15">June 15-24, 2024</option>
+                            <option value="2024-07-10">July 10-19, 2024</option>
+                            <option value="2024-08-05">August 5-14, 2024</option>
+                            <option value="2024-09-01">September 1-10, 2024</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Number of Guests</label>
+                        <select id="guests" name="guests" required>
+                            <option value="">Select number of guests</option>
+                            <option value="1">1 Guest</option>
+                            <option value="2">2 Guests</option>
+                            <option value="3">3 Guests</option>
+                            <option value="4">4 Guests</option>
+                            <option value="5">5 Guests</option>
+                            <option value="6">6 Guests</option>
+                        </select>
+                    </div>
+                    <div class="payment-options">
+                        <h3>Select Payment Method</h3>
+                        <div class="payment-buttons">
+                            <button type="button" class="payment-button card-payment" id="paypal-button-spain">
+                                <i class="fab fa-paypal"></i>
+                                Pay with PayPal
+                            </button>
+                            <button type="button" class="payment-button cash-payment">
+                                <i class="fas fa-money-bill-wave"></i>
+                                Pay in Office
+                            </button>
+                        </div>
+                        <div id="paypal-button-container-spain" class="paypal-button-container" style="display: none; margin-top: 20px;"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Japan Modal and Booking Form before the footer -->
+    <!-- Japan Modal -->
+    <div id="japan-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('japan-modal')">&times;</span>
+            <div class="modal-header">
+                <h2>Japanese Journey</h2>
+                <p class="modal-subtitle">10 Days of Tradition and Innovation</p>
+            </div>
+            <div class="modal-body">
+                <div class="destination-description">
+                    <h3>Destination Overview</h3>
+                    <p>Experience the fascinating contrast of ancient traditions and cutting-edge technology in Japan. From serene temples to bustling city streets, immerse yourself in Japanese culture.</p>
+                    
+                    <h3>Daily Itinerary</h3>
+                    <div class="itinerary-day">
+                        <h4>Days 1-3: Tokyo</h4>
+                        <ul>
+                            <li><i class="fas fa-city"></i> Shibuya and Harajuku tour</li>
+                            <li><i class="fas fa-utensils"></i> Tsukiji fish market visit</li>
+                            <li><i class="fas fa-torii-gate"></i> Senso-ji Temple</li>
+                            <li><i class="fas fa-camera"></i> Tokyo Tower visit</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="itinerary-day">
+                        <h4>Days 4-6: Mount Fuji & Hakone</h4>
+                        <ul>
+                            <li><i class="fas fa-mountain"></i> Mount Fuji viewing</li>
+                            <li><i class="fas fa-hot-tub"></i> Onsen experience</li>
+                            <li><i class="fas fa-train"></i> Bullet train ride</li>
+                            <li><i class="fas fa-leaf"></i> Traditional tea ceremony</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="itinerary-day">
+                        <h4>Days 7-10: Kyoto</h4>
+                        <ul>
+                            <li><i class="fas fa-temple"></i> Golden Pavilion tour</li>
+                            <li><i class="fas fa-fan"></i> Geisha district walk</li>
+                            <li><i class="fas fa-bamboo"></i> Arashiyama bamboo grove</li>
+                            <li><i class="fas fa-plane-departure"></i> Departure day</li>
+                        </ul>
+                    </div>
+
+                    <h3>What's Included</h3>
+                    <ul class="includes-list">
+                        <li><i class="fas fa-hotel"></i> 4-star accommodations</li>
+                        <li><i class="fas fa-train"></i> Rail pass and transfers</li>
+                        <li><i class="fas fa-utensils"></i> Daily breakfast and select dinners</li>
+                        <li><i class="fas fa-user-tie"></i> Expert local guides</li>
+                        <li><i class="fas fa-ticket-alt"></i> All entrance fees</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button onclick="showBookingForm('japan-booking-form')" class="book-button">Book This Trip</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Japan Booking Form -->
+    <div id="japan-booking-form" class="modal booking-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('japan-booking-form')">&times;</span>
+            <div class="modal-header booking-header">
+                <h2>Book Japanese Journey</h2>
+                <p class="modal-subtitle">Complete Your Booking</p>
+            </div>
+            <div class="modal-body">
+                <form class="booking-form">
+                    <div class="form-group">
+                        <label for="fullname-japan">Full Name</label>
+                        <input type="text" id="fullname-japan" name="fullname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="birthday-japan">Date of Birth</label>
+                        <input type="date" id="birthday-japan" name="birthday" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email-japan">Email Address</label>
+                        <input type="email" id="email-japan" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone-japan">Phone Number</label>
+                        <input type="tel" id="phone-japan" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="trip-date">Select Trip Date</label>
+                        <select id="trip-date" name="trip-date" required>
+                            <option value="">Choose a date</option>
+                            <option value="2024-06-15">June 15-24, 2024</option>
+                            <option value="2024-07-10">July 10-19, 2024</option>
+                            <option value="2024-08-05">August 5-14, 2024</option>
+                            <option value="2024-09-01">September 1-10, 2024</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Number of Guests</label>
+                        <select id="guests" name="guests" required>
+                            <option value="">Select number of guests</option>
+                            <option value="1">1 Guest</option>
+                            <option value="2">2 Guests</option>
+                            <option value="3">3 Guests</option>
+                            <option value="4">4 Guests</option>
+                            <option value="5">5 Guests</option>
+                            <option value="6">6 Guests</option>
+                        </select>
+                    </div>
+                    <div class="payment-options">
+                        <h3>Select Payment Method</h3>
+                        <div class="payment-buttons">
+                            <button type="button" class="payment-button card-payment" id="paypal-button-japan">
+                                <i class="fab fa-paypal"></i>
+                                Pay with PayPal
+                            </button>
+                            <button type="button" class="payment-button cash-payment">
+                                <i class="fas fa-money-bill-wave"></i>
+                                Pay in Office
+                            </button>
+                        </div>
+                        <div id="paypal-button-container-japan" class="paypal-button-container" style="display: none; margin-top: 20px;"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Kristian Ralev Travel</h4>
+                <p>Your trusted partner in creating unforgettable travel experiences.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Kristian Ralev Travel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- PayPal SDK -->
+    <script src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID&currency=USD"></script>
+</body>
+</html> 
